@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background: #121214;
+  font: 400 1rem "Spartan", sans-serif;
+}
+
+.title {
+  font-family: "Work sans";
+  color: #04d361;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.description-rocketnews {
+  font-size: 0.875rem;
+  color: #ffffff;
+  line-height: 1.25rem;
+}
+
+.container main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative;
+}
+
+.container main #rocket-news {
+  padding: 3.125rem 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: animateSection 0.3s ease-in-out;
+          animation: animateSection 0.3s ease-in-out;
+}
+
+.container main #rocket-news .logo {
+  width: 24.375rem;
+  height: 5.875rem;
+}
+
+.container main #rocket-news .text {
+  margin: 5.75rem 0 3.125rem;
+}
+
+.container main #rocket-news .text .title {
+  margin-bottom: 0.5rem;
+}
+
+.container main #rocket-news .text .subtitle {
+  display: inline-block;
+  margin-bottom: 0.562rem;
+}
+
+.container main #rocket-news form {
+  width: 49.875rem;
+  position: absolute;
+  top: 24.25rem;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container main #rocket-news form .input-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container main #rocket-news form .input-group label {
+  margin-bottom: 1.125rem;
+  font-size: 0.875rem;
+  color: #a8a8a8;
+}
+
+.container main #rocket-news form .input-group .field {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 5px solid #04d361;
+}
+
+.container main #rocket-news form .input-group .field input {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  font-family: "Work sans";
+  font-size: 0.875rem;
+  border: 0;
+}
+
+.container main #rocket-news form .input-group .field input:focus {
+  outline: 0;
+}
+
+.container main #rocket-news form .input-group .field input::-webkit-input-placeholder {
+  color: #6a6a6a;
+}
+
+.container main #rocket-news form .input-group .field input:-ms-input-placeholder {
+  color: #6a6a6a;
+}
+
+.container main #rocket-news form .input-group .field input::-ms-input-placeholder {
+  color: #6a6a6a;
+}
+
+.container main #rocket-news form .input-group .field input::placeholder {
+  color: #6a6a6a;
+}
+
+.container main #rocket-news form .input-group .field button {
+  width: 3rem;
+  height: 3rem;
+  background: #8257e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+}
+
+.container main #rocket-news form .input-group .field button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+.container main #rocket-news footer {
+  margin-top: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.312rem;
+  z-index: 1;
+}
+
+.container main #rocket-news footer a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #8257e5;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+}
+
+.container main #rocket-news footer a:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+.container main #background {
+  width: 100%;
+  background: url("../assets/read_news.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-animation: animateSection 0.3s 800ms ease-in-out;
+          animation: animateSection 0.3s 800ms ease-in-out;
+}
+
+@-webkit-keyframes animateSection {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateSection {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  /** not ideas for the layout hahaha */
+}
+
+@media (max-width: 480px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #rocket-news img.logo {
+    width: 17.5rem !important;
+    height: auto !important;
+  }
+  main #rocket-news .text {
+    margin: 4rem 0 0 !important;
+  }
+  main #rocket-news .text .title {
+    margin-bottom: 1rem !important;
+  }
+  main #rocket-news form#send-email {
+    width: 90%;
+  }
+  main #background {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  main #rocket-news form#send-email {
+    top: 27.25rem !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
